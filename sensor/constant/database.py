@@ -1,0 +1,2 @@
+DATABASE_NAME = "Akhil"
+COLLECTION_NAME = "sensor"

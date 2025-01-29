@@ -1,0 +1,18 @@
+dill==0.3.9
+dnspython==2.7.0
+evidently==0.5.0
+fastapi==0.115.6
+httptools==0.6.4
+imblearn==0.0
+mypy-boto3-s3==1.35.76
+pip-chill==1.0.3
+pymongo==4.10.1
+python-dotenv==1.0.1
+types-s3transfer==0.10.4
+uvicorn==0.32.1
+watchfiles==1.0.0
+websockets==14.1
+wincertstore==0.2.1
+xgboost==2.1.3
+neuro-mf==0.0.5
+-e .
