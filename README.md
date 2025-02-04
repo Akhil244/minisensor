@@ -24,8 +24,7 @@ Before we run the project, make sure that you are having MongoDB in your local s
 
 
 ## Project Archietecture
-![image](![image](https://github.com/user-attachments/assets/a0861177-57ea-44d5-a4ee-8c1c3966060d)
-)
+![image](https://github.com/user-attachments/assets/a0861177-57ea-44d5-a4ee-8c1c3966060d)
 
 ### Step 1: Clone the repository
 ```bash
