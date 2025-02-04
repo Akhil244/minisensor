@@ -1,5 +1,3 @@
-# minisensor
-=======
 # Sensor-Fault-Detection
 
 ### Problem Statement
@@ -59,14 +57,3 @@ export MONGODB_URL="mongodb+srv://<username>:<password>@ineuron-ai-projects.7eh1
 ```bash
 python main.py
 ```
-
-### Step 6. Train application
-```bash
-http://localhost:8080/train
-
-```
-
-### Step 7. Prediction application
-```bash
-http://localhost:8080/predict
->>>>>>> 0386ad4 (Implementing file and folder structire)
