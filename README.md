@@ -49,7 +49,7 @@ pip install -r requirements.txt
 ### Step 4 - Export the environment variable
 ```bash
 
-export MONGODB_URL="mongodb+srv://<username>:<password>@ineuron-ai-projects.7eh1w4s.mongodb.net/?retryWrites=true&w=majority"
+export MONGODB_URL="mongodb+srv://<username>:<password>@cluster0.9dl24.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 ```
 
