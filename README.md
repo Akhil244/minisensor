@@ -19,10 +19,6 @@ The problem is to reduce the cost due to unnecessary repairs. So it is required 
 ## How to run?
 Before we run the project, make sure that you are having MongoDB in your local system, with Compass since we are using MongoDB for data storage.
 
-## Data Collections
-![image](https://user-images.githubusercontent.com/57321948/193536736-5ccff349-d1fb-486e-b920-02ad7974d089.png)
-
-
 ## Project Archietecture
 ![image](https://github.com/user-attachments/assets/a0861177-57ea-44d5-a4ee-8c1c3966060d)
 
