@@ -15,6 +15,7 @@ The problem is to reduce the cost due to unnecessary repairs. So it is required 
 2. FastAPI 
 3. Machine learning algorithms
 4. MongoDB
+5. Data Engineering Principles
 
 ## How to run?
 Before we run the project, make sure that you are having MongoDB in your local system, with Compass since we are using MongoDB for data storage.
