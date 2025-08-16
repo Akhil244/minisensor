@@ -19,6 +19,9 @@ RUN python setup.py install
 # Install pip requirements
 RUN pip install -r requirements.txt
 
+# Install latest multipart
+RUN pip install --upgrade python-multipart
+
 # Set environment variable placeholder (can override at runtime)
 ENV MONGODB_URL=""
 
