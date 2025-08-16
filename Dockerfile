@@ -23,7 +23,7 @@ RUN pip install -r requirements.txt
 RUN pip install --upgrade python-multipart
 
 # Set environment variable placeholder (can override at runtime)
-ENV MONGODB_URL=""
+ENV MONGO_DB_URL=""
 
 # Render sets PORT dynamically, so don’t hardcode 80
 EXPOSE 8000
