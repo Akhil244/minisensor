@@ -19,14 +19,14 @@ RUN python setup.py install
 # Install pip requirements
 RUN pip install -r requirements.txt
 
-# Install latest multipart
+# Install latest python-multipart
 RUN pip install --upgrade python-multipart
 
 # Set environment variable placeholder (can override at runtime)
 ENV MONGODB_URL=""
 
-# Expose port (adjust if your app listens on a specific port)
-EXPOSE 80
+# Render sets PORT dynamically, so don’t hardcode 80
+EXPOSE 8000
 
-# Command to run your app
-CMD ["python", "main.py"]
+# Run the app with Uvicorn, binding to 0.0.0.0 and Render's PORT
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
