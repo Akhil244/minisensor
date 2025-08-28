@@ -4,29 +4,23 @@ FROM python:3.12.4-slim
 # Set working directory inside the container
 WORKDIR /app
 
-# Install system dependencies (gcc is often needed for building some Python packages)
+# Install system dependencies (gcc is often needed for some Python packages)
 RUN apt-get update && apt-get install -y gcc && rm -rf /var/lib/apt/lists/*
 
-# Copy project files to /app
+# Copy everything from repo (including model.pkl and main.py)
 COPY . /app
 
 # Upgrade pip
 RUN pip install --upgrade pip
 
-# Install setup.py (if it installs your package)
-RUN python setup.py install
-
-# Install pip requirements
+# Install dependencies
 RUN pip install -r requirements.txt
 
-# Install latest python-multipart
+# (Optional) Install latest python-multipart if needed by FastAPI
 RUN pip install --upgrade python-multipart
 
-# Set environment variable placeholder (can override at runtime)
-ENV MONGO_DB_URL=""
-
-# Render sets PORT dynamically, so don’t hardcode 80
+# Expose port (Render dynamically assigns PORT, default 8000)
 EXPOSE 8000
 
-# Run the app with Uvicorn, binding to 0.0.0.0 and Render's PORT
+# Run FastAPI app with Uvicorn
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
