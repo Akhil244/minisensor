@@ -7,13 +7,16 @@ WORKDIR /app
 # Install system dependencies (gcc is often needed for some Python packages)
 RUN apt-get update && apt-get install -y gcc && rm -rf /var/lib/apt/lists/*
 
-# Copy everything from repo (including model.pkl and main.py)
+# Copy project files to /app
 COPY . /app
 
 # Upgrade pip
 RUN pip install --upgrade pip
 
-# Install dependencies
+# Install your sensor package
+RUN python setup.py install
+
+# Install other requirements
 RUN pip install -r requirements.txt
 
 # (Optional) Install latest python-multipart if needed by FastAPI
